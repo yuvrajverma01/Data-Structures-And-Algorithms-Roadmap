@@ -103,13 +103,14 @@
 - Doubly And Circular LL
 - String Algorithms like KMP and Z 
 
-#Algorithms
+# Algorithms
 
 ## Kadane's Algorithm
 
-Time Complexity: **O(n)**
-Algo's Objective: **Maximum Sum of Contiguous Subarray**
+### Time Complexity: **O(n)**
+### Algo's Objective: **Maximum Sum of Contiguous Subarray**
 ```
+
 def kadanealgo(arr):
     maximum = min(arr)
     cur = 0
@@ -128,9 +129,10 @@ print(kadanealgo(arr))
 
 ## Dutch National Flag Algorithm
 
-Time Complexity: **O(n)**
-Algo's Objective: **Sort an array of 0s, 1s and 2s**
+### Time Complexity: **O(n)**
+### Algo's Objective: **Sort an array of 0s, 1s and 2s**
 ```
+
 def dutchflagalgo(arr):
     low = 0
     mid = 0
