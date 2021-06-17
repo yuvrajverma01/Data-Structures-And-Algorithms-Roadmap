@@ -107,9 +107,15 @@
 
 ## Kadane's Algorithm
 
+<<<<<<< HEAD
 #### Time Complexity: **O(n)**
 #### Algo's Objective: **Maximum Sum of Contiguous Subarray**
 ```python
+=======
+### Time Complexity: **O(n)**
+### Algo's Objective: **Maximum Sum of Contiguous Subarray**
+```
+>>>>>>> f33760d788b083f42e9046b9b1abc717b7a3a2a9
 
 def kadanealgo(arr):
     maximum = min(arr)
@@ -129,9 +135,15 @@ print(kadanealgo(arr))
 
 ## Dutch National Flag Algorithm
 
+<<<<<<< HEAD
 #### Time Complexity: **O(n)**
 #### Algo's Objective: **Sort an array of 0s, 1s and 2s**
 ```python
+=======
+### Time Complexity: **O(n)**
+### Algo's Objective: **Sort an array of 0s, 1s and 2s**
+```
+>>>>>>> f33760d788b083f42e9046b9b1abc717b7a3a2a9
 
 def dutchflagalgo(arr):
     low = 0
