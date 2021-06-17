@@ -103,13 +103,14 @@
 - Doubly And Circular LL
 - String Algorithms like KMP and Z 
 
-#Algorithms
+# Algorithms
 
 ## Kadane's Algorithm
 
-Time Complexity: **O(n)**
-Algo's Objective: **Maximum Sum of Contiguous Subarray**
-```
+#### Time Complexity: **O(n)**
+#### Algo's Objective: **Maximum Sum of Contiguous Subarray**
+```python
+
 def kadanealgo(arr):
     maximum = min(arr)
     cur = 0
@@ -128,9 +129,10 @@ print(kadanealgo(arr))
 
 ## Dutch National Flag Algorithm
 
-Time Complexity: **O(n)**
-Algo's Objective: **Sort an array of 0s, 1s and 2s**
-```
+#### Time Complexity: **O(n)**
+#### Algo's Objective: **Sort an array of 0s, 1s and 2s**
+```python
+
 def dutchflagalgo(arr):
     low = 0
     mid = 0
@@ -154,57 +156,118 @@ print(dutchflagalgo(arr))
 
 ```
 
-## Algorithm
+## Sliding Window Algorithm
 
-Time Complexity: **O()**
-Algo's Objective: ****
-```
+#### Time Complexity: **O(n)**
+#### Algo's Objective: **Maximum/Minimum Sum of K size subarray**
+```python
 
+"""
+1. windowsum: Store the sum of elements of current window
+2. maximum: Store the maximum sum while iterating through windows
+3. While running the for loop, we are removing the 1st element of the current window and adding the rightmost element (not included) of the window.
 
-```
+"""
 
-## Algorithm
+def slidingwindow(arr, k):
+    windowsum = sum(arr[:k])
+    maximum = windowsum
+    n = len(arr)
 
-Time Complexity: **O()**
-Algo's Objective: ****
-```
-
-
-```
-
-## Algorithm
-
-Time Complexity: **O()**
-Algo's Objective: ****
-```
-
-
-```
-
-## Algorithm
-
-Time Complexity: **O()**
-Algo's Objective: ****
-```
-
+    for i in range(n-k):
+        windowsum = windowsum - arr[i] + arr[i+k]
+        maximum = max(windowsum, maximum)
+    return maximum
+    
+arr = [1, 4, 2, 10, 2, 3, 1, 0, 20]
+k = 3
+print(slidingwindow(arr, k))
 
 ```
 
-## Algorithm
+#### Time Complexity: **O(n²)**
+#### Algo's Objective: **Smallest subarray with given Sum**
+```python
 
-Time Complexity: **O()**
-Algo's Objective: ****
+def slidingwindow(arr, target):
+    windowsum = 0              #Current window sum
+    j = 0                      #Window Start
+    jsize = max(arr)           #Current Window Size
+
+    for i in range(len(arr)):
+        windowsum = windowsum + arr[i]
+
+        while windowsum >= target:
+            jsize = min(jsize, i - j + 1)
+            windowsum = windowsum - arr[j]
+            j = j + 1
+    return jsize
+
+    
+arr = [4, 2, 2, 7, 8, 1, 2, 8, 1, 0]
+target = 8
+print(slidingwindow(arr, target))
+
 ```
 
+##  Algorithm
+
+#### Time Complexity: **O()**
+#### Algo's Objective: ****
+```python
+
+
 
 ```
 
-## Algorithm
+##  Algorithm
 
-Time Complexity: **O()**
-Algo's Objective: ****
+#### Time Complexity: **O()**
+#### Algo's Objective: ****
+```python
+
+
+
 ```
 
+##  Algorithm
+
+#### Time Complexity: **O()**
+#### Algo's Objective: ****
+```python
+
+
 
 ```
+
+##  Algorithm
+
+#### Time Complexity: **O()**
+#### Algo's Objective: ****
+```python
+
+
+
+```
+
+##  Algorithm
+
+#### Time Complexity: **O()**
+#### Algo's Objective: ****
+```python
+
+
+
+```
+
+##  Algorithm
+
+#### Time Complexity: **O()**
+#### Algo's Objective: ****
+```python
+
+
+
+```
+
 
