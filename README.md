@@ -218,11 +218,50 @@ print(slidingwindow(arr, target))
 
 ```
 
-## Algorithm
+## Two Pointer Algorithm
+
+#### Time Complexity: **O(n)**
+
+#### Algo's Objective: **Find pairs in an array with a sum equal to k**
+
+```python
+
+def twopointeralgo(arr, k):
+    i = 0              #represents first pointer
+    j = len(arr) - 1   #represents second pointer
+ 
+    while i<j:
+        if (arr[i] + arr[j] == k):   #If we find a pair
+            return 1
+        elif(arr[i] + arr[j] < k):
+            i = i + 1
+        else:
+            j -= 1
+    return 0
+ 
+arr = [3, 5, 9, 2, 8, 10, 11]
+k = 17
+print(twopointeralgo(arr, k))
+
+```
+
+## Three Pointer Algorithm
+
+#### Time Complexity: **O(n)**
+
+#### Algo's Objective: **Find triplets in an array with a sum equal to k**
+
+```python
+
+
+
+```
+
+## 
 
 #### Time Complexity: **O()**
 
-#### Algo's Objective: \*\*\*\*
+#### Algo's Objective: ****
 
 ```python
 
