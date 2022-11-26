@@ -1,4 +1,4 @@
-# Data Structures And Algorithms Roadmap
+# We'll be adding new stuff here in Nov, 2022
 
 ### • [Practice Link](https://www.codingninjas.com/codestudio/guided-paths/data-structures-algorithms)
 
